@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #000;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 22px;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
+  
+  nav a.active {
+    text-decoration: underline;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .search input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .breadcrumb {
+    margin-top: 130px;
+    margin-left: 70px;
+    /* margin: 30px 60px; */
+    color: rgb(8, 8, 8);
+  }
+  
+  .about {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+    gap: 40px;
+  }
+  
+  .about-text {
+    flex: 1;
+    padding: 20px;
+    margin-top: 200px;
+  }
+  
+  .about-text h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+  
+  .about-text p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .about-img img {
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .stat-box {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 180px;
+  }
+  
+  .stat-box.red {
+    background-color: #db4444;
+    color: white;
+  }
+  
+  .stat-box h3 {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  .team {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .member img {
+    width: 180px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .member h4 {
+    margin: 5px 0;
+    font-size: 18px;
+  }
+  
+  .member p {
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .social-icons {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .benefits {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .benefit i {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .benefit h4 {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  footer {
+    background-color: #000;
+    color: white;
+    padding: 40px;
+  }
+  
+  .footer-cols {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  .footer-cols h4 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-cols p, .footer-cols small {
+    font-size: 14px;
+    margin: 4px 0;
+  }
+  
+  .subscribe {
+    margin-top: 10px;
+    display: flex;
+  }
+  
+  .subscribe input {
+    padding: 8px;
+    border: none;
+    width: 70%;
+  }
+  
+  .subscribe button {
+    background-color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .qr-code {
+    width: 100px;
+    margin: 10px 0;
+  }
+  
+  .store-icons img {
+    width: 120px;
+    margin: 5px 0;
+  }
+  
+  .social-icons i {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  footer .copyright {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 13px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+  }
+
+/* ---------------- RESPONSIVE STYLES ---------------- */
+
+@media (max-width: 1024px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 30px;
+  }
+
+  .about-text {
+    margin-top: 50px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .about-img {
+    text-align: center;
+  }
+
+  .stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .team {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .benefits {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .footer-cols {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .subscribe {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .subscribe button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 0;
+  }
+
+  .search {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .breadcrumb {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 26px;
+  }
+
+  .stat-box {
+    width: 90%;
+  }
+
+  .member img {
+    width: 120px;
+  }
+
+  .benefit i {
+    font-size: 24px;
+  }
+
+  .benefit h4 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+
+  .search input {
+    width: 100%;
+  }
+
+  .about-text h2 {
+    font-size: 22px;
+  }
+
+  .stats {
+    padding: 20px 10px;
+  }
+
+  .team {
+    padding: 30px 10px;
+  }
+
+  .benefits {
+    padding: 20px 10px;
+  }
+
+  footer {
+    padding: 20px;
+  }
+
+  .footer-cols {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .subscribe {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .subscribe input,
+  .subscribe button {
+    width: 100%;
+  }
+
+  .store-icons img {
+    width: 100px;
+  }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="./css/signupstyles.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Exclusive</div>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="./About.html">About</a></li>
+        <li><a href="./Signup.html" class="active">Sign Up</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="What are you looking for?">
+      <i class="ri-search-line"></i>
+    </div>
+  </header>
+
+  <!-- Main Signup Section -->
+  <main class="signup-section">
+    <div class="signup-left">
+      <img src="./images/Side Image.svg" alt="Signup Banner">
+    </div>
+    <div class="signup-right">
+      <h2>Create an account</h2>
+      <p>Enter your details below</p>
+      <form>
+        <input id="namei" type="text" placeholder="Name" required>
+        <input id="ph" type="text" placeholder="Email or Phone Number" required>
+        <input id="pass" type="password" placeholder="Password" required>
+        <button id="btn" type="submit" class="primary-btn">Create Account</button>
+        <button type="button" class="google-btn">
+          <i class="ri-google-fill"></i> Sign up with Google
+        </button>
+      </form>
+      <p class="login-text">Already have account? <a href="#">Log in</a></p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>Exclusive</h4>
+        <p>Subscribe</p>
+        <small>Get 10% off your first order</small>
+        <div class="subscribe">
+          <input type="email" placeholder="Enter your email">
+          <button><i class="ri-arrow-right-line"></i></button>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <p>111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+        <p>exclusive@gmail.com</p>
+        <p>+88015-88888-9999</p>
+      </div>
+      <div class="footer-col">
+        <h4>Account</h4>
+        <p>My Account</p>
+        <p>Login / Register</p>
+        <p>Cart</p>
+        <p>Wishlist</p>
+        <p>Shop</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Link</h4>
+        <p>Privacy Policy</p>
+        <p>Terms Of Use</p>
+        <p>FAQ</p>
+        <p>Contact</p>
+      </div>
+      <div class="footer-col">
+        <h4>Download App</h4>
+        <p>Save $3 with App New User Only</p>
+        <img src="https://i.imgur.com/8p7B8O3.png" alt="QR Code" class="qr-code" />
+        <div class="store-icons">
+          <img src="https://i.imgur.com/lF6bVbL.png" alt="Google Play" />
+          <img src="https://i.imgur.com/yKpl8oE.png" alt="App Store" />
+        </div>
+        <div class="social-icons">
+          <i class="ri-facebook-fill"></i>
+          <i class="ri-twitter-fill"></i>
+          <i class="ri-instagram-line"></i>
+          <i class="ri-linkedin-fill"></i>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© Copyright Rimel 2022. All right reserved</p>
+    </div>
+  </footer>
+<script src="signup.js"></script>
+</body>
+</html>
