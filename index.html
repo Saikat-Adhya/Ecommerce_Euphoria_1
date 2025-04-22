@@ -1,222 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>E-Commerce Home</title>
-  <link rel="stylesheet" href="./css/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Home</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
+      integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">Exclusive</div>
+      <nav>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="./Contact.html">Contact</a></li>
+          <li><a href="./About.html">About</a></li>
+          <li><a href="./Signup.html">Sign Up</a></li>
+        </ul>
+      </nav>
+      <div class="search-cart">
+        <input type="text" placeholder="What are you looking for?" />
+        <span class="icon">🔍</span>
+        <span class="icon">🛒</span>
+        <i id="theme" class="ri-moon-line"></i>
+      </div>
+    </header>
 
+    <!-- Sidebar and Carousel Banner -->
+    <div class="main-section">
+      <div class="sidebar">
+        <ul>
+          <li>Women's Fashion</li>
+          <li>Men's Fashion</li>
+          <li>Electronics</li>
+          <li>Home & Lifestyle</li>
+          <li>Medicine</li>
+          <li>Sports & Outdoor</li>
+          <li>Baby's & Toys</li>
+          <li>Groceries & Pets</li>
+          <li>Health & Beauty</li>
+        </ul>
+      </div>
 
-  <!-- Header -->
-  <header>
-    <div class="logo">Exclusive</div>
-    <nav>
-      <ul>
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="./Contact.html">Contact</a></li>
-        <li><a href="./About.html">About</a></li>
-        <li><a href="./Signup.html">Sign Up</a></li>
-      </ul>
-    </nav>
-    <div class="search-cart">
-      <input type="text" placeholder="What are you looking for?" />
-      <span class="icon">🔍</span>
-      <span class="icon">🛒</span>
-      <i id="theme" class="ri-moon-line"></i>
+      <!-- Bootstrap Carousel -->
+      <div id="bannerCarousel" class="carousel slide image-banner" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/apple.svg" class="d-block w-100" alt="Slide 1" />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/iphone-15-mister-mobile-singapore.png" class="d-block w-100" alt="Slide 2" />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/Apple-iPhone-15-promo-banner-buy-now-scaled.jpg" class="d-block w-100" alt="Slide 3" />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
     </div>
-  </header>
 
-  <!-- Sidebar and Banner -->
-  <div class="main-section">
-    <div class="sidebar">
-      <ul>
-        <li>Women's Fashion</li>
-        <li>Men's Fashion</li>
-        <li>Electronics</li>
-        <li>Home & Lifestyle</li>
-        <li>Medicine</li>
-        <li>Sports & Outdoor</li>
-        <li>Baby's & Toys</li>
-        <li>Groceries & Pets</li>
-        <li>Health & Beauty</li>
-      </ul>
-    </div>
-  
-    <!-- Corrected Banner Section -->
-    <div class="image-banner">
-      <img src="./images/Frame 560.svg" alt="Banner Image" />
-    </div>
-  </div>
-  
-
-  <!-- Flash Sale Section -->
-  <section class="flash-sale">
-    <div class="flash-header">
-      <h3>Today's Flash Sales</h3>
-      <div class="timer">
-        <span>03</span> : <span>23</span> : <span>19</span> : <span>56</span>
-      </div>
-    </div>
-
-    <div class="product-cards">
-      <!-- Product 1 -->
-      <div class="product-card">
-        <img src="https://i.imgur.com/eM7UjZ8.png" alt="Gamepad">
-        <div class="discount">-40%</div>
-        <h4>HAVIT HV-G92 Gamepad</h4>
-        <p class="price">$120 <span>$160</span></p>
-        <p>⭐⭐⭐⭐☆ (88)</p>
+    <!-- Flash Sale Section -->
+    <section class="flash-sale">
+      <div class="flash-header">
+        <h3>Today's Flash Sales</h3>
+        <div class="timer">
+          <span>03</span> : <span>23</span> : <span>19</span> : <span>56</span>
+        </div>
       </div>
 
-      <!-- Product 2 -->
-      <div class="product-card">
-        <img src="https://i.imgur.com/lCW2v6H.png" alt="Keyboard">
-        <div class="discount">-35%</div>
-        <h4>AK-900 Wired Keyboard</h4>
-        <p class="price">$960 <span>$1160</span></p>
-        <p>⭐⭐⭐⭐☆ (75)</p>
+      <div class="product-cards">
+        <!-- Repeat product cards -->
+        <div class="product-card">
+          <img src="./images/gaming.svg" alt="Gamepad" />
+          <div class="discount">-40%</div>
+          <h4>HAVIT HV-G92 Gamepad</h4>
+          <p class="price">$120 <span>$160</span></p>
+          <p>⭐⭐⭐⭐☆ (88)</p>
+        </div>
+        <div class="product-card">
+          <img src="./images/keyboard.svg" alt="Keyboard" />
+          <div class="discount">-35%</div>
+          <h4>AK-900 Wired Keyboard</h4>
+          <p class="price">$960 <span>$1160</span></p>
+          <p>⭐⭐⭐⭐☆ (75)</p>
+        </div>
+        <div class="product-card">
+          <img src="./images/monitor.svg" alt="Monitor" />
+          <div class="discount">-30%</div>
+          <h4>IPS LCD Gaming Monitor</h4>
+          <p class="price">$370 <span>$400</span></p>
+          <p>⭐⭐⭐⭐⭐ (99)</p>
+        </div>
+        <div class="product-card">
+          <img src="./images/chair.svg" alt="Chair" />
+          <div class="discount">-30%</div>
+          <h4>Gaming Chair</h4>
+          <p class="price">$200 <span>$300</span></p>
+          <p>⭐⭐⭐⭐⭐ (120)</p>
+        </div>
+        <div class="product-card">
+          <img src="./images/gaming.svg" alt="Gamepad" />
+          <div class="discount">-40%</div>
+          <h4>HAVIT HV-G92 Gamepad</h4>
+          <p class="price">$120 <span>$160</span></p>
+          <p>⭐⭐⭐⭐☆ (88)</p>
+        </div>
+        <div class="product-card">
+          <img src="./images/keyboard.svg" alt="Keyboard" />
+          <div class="discount">-35%</div>
+          <h4>AK-900 Wired Keyboard</h4>
+          <p class="price">$960 <span>$1160</span></p>
+          <p>⭐⭐⭐⭐☆ (75)</p>
+        </div>
+        <div class="product-card">
+          <img src="./images/monitor.svg" alt="Monitor" />
+          <div class="discount">-30%</div>
+          <h4>IPS LCD Gaming Monitor</h4>
+          <p class="price">$370 <span>$400</span></p>
+          <p>⭐⭐⭐⭐⭐ (99)</p>
+        </div>
+        <div class="product-card">
+          <img src="./images/chair.svg" alt="Chair" />
+          <div class="discount">-30%</div>
+          <h4>Gaming Chair</h4>
+          <p class="price">$200 <span>$300</span></p>
+          <p>⭐⭐⭐⭐⭐ (120)</p>
+        </div>
       </div>
 
-      <!-- Product 3 -->
-      <div class="product-card">
-        <img src="https://i.imgur.com/I96giVJ.png" alt="Monitor">
-        <div class="discount">-30%</div>
-        <h4>IPS LCD Gaming Monitor</h4>
-        <p class="price">$370 <span>$400</span></p>
-        <p>⭐⭐⭐⭐⭐ (99)</p>
+      <div class="view-btn">
+        <button>View All Products</button>
       </div>
-      <div class="product-card">
-        <img src="https://i.imgur.com/I96giVJ.png" alt="Monitor">
-        <div class="discount">-30%</div>
-        <h4>IPS LCD Gaming Monitor</h4>
-        <p class="price">$370 <span>$400</span></p>
-        <p>⭐⭐⭐⭐⭐ (99)</p>
-      </div>
-      <div class="product-card">
-        <img src="https://i.imgur.com/I96giVJ.png" alt="Monitor">
-        <div class="discount">-30%</div>
-        <h4>IPS LCD Gaming Monitor</h4>
-        <p class="price">$370 <span>$400</span></p>
-        <p>⭐⭐⭐⭐⭐ (99)</p>
-      </div>
-      <div class="product-card">
-        <img src="https://i.imgur.com/I96giVJ.png" alt="Monitor">
-        <div class="discount">-30%</div>
-        <h4>IPS LCD Gaming Monitor</h4>
-        <p class="price">$370 <span>$400</span></p>
-        <p>⭐⭐⭐⭐⭐ (99)</p>
-      </div>
-      <div class="product-card">
-        <img src="https://i.imgur.com/I96giVJ.png" alt="Monitor">
-        <div class="discount">-30%</div>
-        <h4>IPS LCD Gaming Monitor</h4>
-        <p class="price">$370 <span>$400</span></p>
-        <p>⭐⭐⭐⭐⭐ (99)</p>
-      </div>
-      <div class="product-card">
-        <img src="https://i.imgur.com/I96giVJ.png" alt="Monitor">
-        <div class="discount">-30%</div>
-        <h4>IPS LCD Gaming Monitor</h4>
-        <p class="price">$370 <span>$400</span></p>
-        <p>⭐⭐⭐⭐⭐ (99)</p>
-      </div>
-      <div class="product-card">
-        <img src="https://i.imgur.com/I96giVJ.png" alt="Monitor">
-        <div class="discount">-30%</div>
-        <h4>IPS LCD Gaming Monitor</h4>
-        <p class="price">$370 <span>$400</span></p>
-        <p>⭐⭐⭐⭐⭐ (99)</p>
-      </div>
-      <div class="product-card">
-        <img src="https://i.imgur.com/I96giVJ.png" alt="Monitor">
-        <div class="discount">-30%</div>
-        <h4>IPS LCD Gaming Monitor</h4>
-        <p class="price">$370 <span>$400</span></p>
-        <p>⭐⭐⭐⭐⭐ (99)</p>
-      </div>
-      <div class="product-card">
-        <img src="https://i.imgur.com/I96giVJ.png" alt="Monitor">
-        <div class="discount">-30%</div>
-        <h4>IPS LCD Gaming Monitor</h4>
-        <p class="price">$370 <span>$400</span></p>
-        <p>⭐⭐⭐⭐⭐ (99)</p>
-      </div>
-      <div class="product-card">
-        <img src="https://i.imgur.com/I96giVJ.png" alt="Monitor">
-        <div class="discount">-30%</div>
-        <h4>IPS LCD Gaming Monitor</h4>
-        <p class="price">$370 <span>$400</span></p>
-        <p>⭐⭐⭐⭐⭐ (99)</p>
-      </div>
-      <div class="product-card">
-        <img src="https://i.imgur.com/I96giVJ.png" alt="Monitor">
-        <div class="discount">-30%</div>
-        <h4>IPS LCD Gaming Monitor</h4>
-        <p class="price">$370 <span>$400</span></p>
-        <p>⭐⭐⭐⭐⭐ (99)</p>
-      </div>
-      <div class="product-card">
-        <img src="https://i.imgur.com/I96giVJ.png" alt="Monitor">
-        <div class="discount">-30%</div>
-        <h4>IPS LCD Gaming Monitor</h4>
-        <p class="price">$370 <span>$400</span></p>
-        <p>⭐⭐⭐⭐⭐ (99)</p>
-      </div>
-      <div class="product-card">
-        <img src="https://i.imgur.com/I96giVJ.png" alt="Monitor">
-        <div class="discount">-30%</div>
-        <h4>IPS LCD Gaming Monitor</h4>
-        <p class="price">$370 <span>$400</span></p>
-        <p>⭐⭐⭐⭐⭐ (99)</p>
-      </div>
-      <div class="product-card">
-        <img src="https://i.imgur.com/I96giVJ.png" alt="Monitor">
-        <div class="discount">-30%</div>
-        <h4>IPS LCD Gaming Monitor</h4>
-        <p class="price">$370 <span>$400</span></p>
-        <p>⭐⭐⭐⭐⭐ (99)</p>
-      </div>
-      <div class="product-card">
-        <img src="https://i.imgur.com/I96giVJ.png" alt="Monitor">
-        <div class="discount">-30%</div>
-        <h4>IPS LCD Gaming Monitor</h4>
-        <p class="price">$370 <span>$400</span></p>
-        <p>⭐⭐⭐⭐⭐ (99)</p>
-      </div>
-      <div class="product-card">
-        <img src="https://i.imgur.com/I96giVJ.png" alt="Monitor">
-        <div class="discount">-30%</div>
-        <h4>IPS LCD Gaming Monitor</h4>
-        <p class="price">$370 <span>$400</span></p>
-        <p>⭐⭐⭐⭐⭐ (99)</p>
-      </div>
-      <div class="product-card">
-        <img src="https://i.imgur.com/I96giVJ.png" alt="Monitor">
-        <div class="discount">-30%</div>
-        <h4>IPS LCD Gaming Monitor</h4>
-        <p class="price">$370 <span>$400</span></p>
-        <p>⭐⭐⭐⭐⭐ (99)</p>
-      </div>
-      <div class="product-card">
-        <img src="https://i.imgur.com/I96giVJ.png" alt="Monitor">
-        <div class="discount">-30%</div>
-        <h4>IPS LCD Gaming Monitor</h4>
-        <p class="price">$370 <span>$400</span></p>
-        <p>⭐⭐⭐⭐⭐ (99)</p>
-      </div>
-      <!-- Add more products here -->
-    </div>
-    <div class="view-btn">
-      <button>View All Products</button>
-    </div>
-  </section>
-<script src="home.js"></script>
-</body>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
 </html>

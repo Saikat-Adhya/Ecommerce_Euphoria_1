@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="./css/signupstyles.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Exclusive</div>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="./About.html">About</a></li>
+        <!-- <li><a href="./Signup.html">Sign Up</a></li> -->
+        <li><a href="./Login.html" class="active">Login</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="What are you looking for?">
+      <i class="ri-search-line"></i>
+    </div>
+  </header>
+
+  <!-- Main Login Section -->
+  <main class="signup-section">
+    <div class="signup-left">
+      <img src="./images/Side Image.svg" alt="Login Banner">
+    </div>
+    <div class="signup-right">
+      <h2>Login to your account</h2>
+      <p>Enter your credentials below</p>
+      <form>
+        <input id="emailOrPhone" type="text" placeholder="Email or Phone Number" required>
+        <input id="password" type="password" placeholder="Password" required>
+        <input id="cpassword" type="password" placeholder="Confirm Password" required>
+        <button id="btn" type="submit" class="primary-btn">Login</button>
+        <button type="button" class="google-btn">
+          <i class="ri-google-fill"></i> Login with Google
+        </button>
+      </form>
+      <p class="login-text">Don’t have an account? <a href="./Signup.html">Sign Up</a></p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <!-- (Same footer content as Signup) -->
+      <!-- You can copy the same footer here as it is -->
+    </div>
+    <div class="copyright">
+      <p>© Copyright Rimel 2022. All right reserved</p>
+    </div>
+  </footer>
+
+<script src="login.js"></script>
+</body>
+</html>

@@ -10,3 +10,12 @@ themeToggle.addEventListener("click", () => {
     themeToggle.classList.replace("ri-sun-line", "ri-moon-line");
   }
 });
+const logoutButton = document.getElementById('logout');
+//Logout functionality
+
+logoutButton.addEventListener("click", (e)=>{
+    e.preventDefault();
+    localStorage.removeItem("password"); // Remove the password from local storage
+    alert("Logged out successfully");
+    window.location.href = "Login.html"; // Redirect to login page
+})

@@ -4,6 +4,8 @@ body {
   margin: 0;
   padding: 0;
   padding-top: 70px; /* For fixed header spacing */
+  background-color: #ffffff;
+  color: #000000;
 }
 
 /* Header */
@@ -39,6 +41,13 @@ nav a {
   color: black;
   font-weight: 500;
 }
+.carousel-item{
+  height: 300px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
 
 nav a.active {
   text-decoration: underline;
@@ -131,6 +140,7 @@ nav a.active {
   overflow-y: hidden;
   padding-bottom: 10px;
   flex-wrap: nowrap;
+  scroll-behavior: smooth;
 }
 
 .product-card {
@@ -166,7 +176,7 @@ nav a.active {
 }
 
 .price span {
-  color: #fffefe;
+  color: #8d8d8d;
   text-decoration: line-through;
   font-size: 14px;
   margin-left: 8px;
@@ -252,66 +262,6 @@ nav a.active {
     max-width: 300px;
   }
 }
-/* ------ */
-/* Dark Mode Styles */
-body.dark-mode {
-  background-color: #121212;
-  color: #fffcfc;
-}
-
-.dark-mode header {
-  background-color: #1e1e1e;
-  color: white;
-}
-
-.dark-mode .logo,
-.dark-mode nav a,
-.dark-mode .price {
-  color: white;
-}
-
-.dark-mode nav a.active {
-  color: #f44336;
-}
-
-.dark-mode .search-cart input {
-  background-color: #333;
-  color: white;
-  border: 1px solid #555;
-}
-
-.dark-mode .icon {
-  color: white;
-}
-
-.dark-mode .sidebar {
-  background-color: #1e1e1e;
-}
-
-.dark-mode .sidebar li {
-  color: white;
-}
-
-.dark-mode .image-banner {
-  background-color: #333;
-}
-
-.dark-mode .flash-sale {
-  background-color: #1a1a1a;
-}
-
-.dark-mode .product-card {
-  background-color: #2a2a2a;
-  color: white;
-}
-
-.dark-mode .discount {
-  background-color: #ff5252;
-}
-
-.dark-mode .view-btn button {
-  background-color: #e53935;
-}
 
 /* Small Devices (up to 480px) */
 @media (max-width: 480px) {
@@ -331,4 +281,72 @@ body.dark-mode {
     font-size: 12px;
     padding: 4px 8px;
   }
+  
+}
+
+/* ----------------- Dark Mode Styles ----------------- */
+
+/* ----------------- Dark Mode Styles ----------------- */
+
+body.dark-mode {
+  background-color: #000000; /* Solid black */
+  color: #ffffff;
+}
+
+.dark-mode header {
+  background-color: #d46a6a; /* Solid black */
+  color: white;
+}
+
+.dark-mode .logo,
+.dark-mode nav a,
+.dark-mode .price {
+  color: white;
+}
+
+.dark-mode nav a.active {
+  color: #fdfefd;
+}
+
+.dark-mode .search-cart input {
+  background-color: #000000; /* Solid black */
+  color: white;
+  border: 1px solid #555;
+}
+
+.dark-mode .icon {
+  color: white;
+}
+
+.dark-mode .main-section {
+  background-color: #000000; /* Solid black */
+}
+
+.dark-mode .sidebar {
+  background-color: #000000; /* Solid black */
+}
+
+.dark-mode .sidebar li {
+  color: white;
+}
+
+.dark-mode .image-banner {
+  background-color: #000000; /* Solid black */
+}
+
+.dark-mode .flash-sale {
+  background-color: #000000; /* Solid black */
+}
+
+.dark-mode .product-card {
+  background-color: #000000; /* Solid black */
+  color: white;
+}
+
+.dark-mode .discount {
+  background-color: #ff5252;
+}
+
+.dark-mode .view-btn button {
+  background-color: #e53935;
 }

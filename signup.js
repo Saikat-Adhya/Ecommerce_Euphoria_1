@@ -20,4 +20,6 @@ btn.addEventListener("click", (e) => {
     localStorage.setItem("name", nameValue);
     localStorage.setItem("phone", phoneValue);
     localStorage.setItem("password", passwordValue);
+    window.location.href = "Login.html"; // Redirect to login page
+
 });
